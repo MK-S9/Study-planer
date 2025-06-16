@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futuristic Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="room-bg">
+    <div class="topbar">
+      <h1>📘 My Study Planner</h1>
+      <button id="toggleMode">🌙</button>
+    </div>
+
+    <div class="calendar">
+      <label>Select Date:</label>
+      <input type="date" id="studyDate" />
+    </div>
+
+    <div class="input-section">
+      <input type="number" id="studyHours" placeholder="Available study hours (e.g. 5)" />
+      <input type="text" id="subjects" placeholder="Subjects (comma separated)" />
+      <button onclick="generatePlan()">🎯 Suggest Plans</button>
+    </div>
+
+    <div class="plan-section" id="plansContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
